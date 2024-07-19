@@ -2,7 +2,7 @@ import './CardsOurWork.css';
 
 export default function CardsOurWork() {
   return (
-    <div className="flex flex-wrap justify-center py-16 md:pt-20 md:pb-40 bg-[#F0F4FB]">
+    <div className="flex flex-wrap justify-center py-20 md:pt-20 md:pb-40 bg-[#F0F4FB]">
       <div className="max-w-sm h-[180px] rounded shadow-lg m-4 sm:mt-20 lg:mt-4 text-gray-400 hover:text-white transition-all hover:extend-card relative">
         <div
           className="background-image"
