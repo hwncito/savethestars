@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import './UserDropdown.css';
-import logitoImage from '../../../public/light-pollution.webp';
 
 export default function UserDropdown({ session, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,12 +34,11 @@ export default function UserDropdown({ session, children }) {
         className="flex items-center text-gray-300"
         type="button"
       >
-        {/* <img
-          src={logitoImage}
-          // src={session?.user?.image}
+        <img
+          src={session?.user?.image}
           alt="user logo"
           className="rounded-full w-10"
-        /> */}
+        />
         <svg
           className={`w-2.5 h-2.5 ms-3 ${
             isOpen ? '' : 'rotate-180'
@@ -72,12 +70,12 @@ export default function UserDropdown({ session, children }) {
         >
           <li>
             <p className="block px-4 py-2 hover:bg-gray-100 text-right font-medium">
-              {/* {session?.user?.name} */}Juan
+              {session?.user?.name}
             </p>
           </li>
           <li>
             <p className="block px-4 py-2 hover:bg-gray-100 text-xs text-right">
-              {/* {session?.user?.email} */}juan@g.com
+              {session?.user?.email}
             </p>
           </li>
         </ul>
