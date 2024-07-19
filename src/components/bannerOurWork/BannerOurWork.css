@@ -1,0 +1,28 @@
+/* BannerOurWork.css */
+@keyframes scroll-banner {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.banner-content {
+  display: inline-block;
+  min-width: 200%;
+  animation: scroll-banner 25s linear infinite;
+}
+
+.banner-content span {
+  display: inline-block;
+  padding: 0 2rem; /* Adjust padding as needed */
+}
+
+.banner-bg {
+    background-image: url('/hero-image.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Ensures text is visible against the background */
+  }

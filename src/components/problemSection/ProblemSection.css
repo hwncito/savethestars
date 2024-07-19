@@ -1,0 +1,19 @@
+.gradient-text {
+    background: linear-gradient(90deg, #d43fe1 0%, #2ea1fd 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* This ensures the text is transparent in case the gradient is not applied */
+  }  
+
+/* ProblemSection.css */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

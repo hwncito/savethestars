@@ -1,0 +1,34 @@
+/* CardComponent.css */
+.extend-card {
+    max-height: 180px; /* Initial height to fit the SVGs and title */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .hover\:extend-card:hover {
+    max-height: 300px; /* Adjust to the required height when expanded */
+  }
+  
+  .hidden-text {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+  }
+  
+  .hover\:extend-card:hover .hidden-text {
+    opacity: 1;
+    max-height: 100px; /* Adjust to the required height */
+  }
+  
+  .arrow-container {
+    transition: opacity 0.5s ease;
+  }
+  
+  .hover\:extend-card:hover .arrow-container {
+    opacity: 0;
+  }
+  
+  .background-image {
+    padding: 1rem; /* Adjust padding as needed */
+  }
+  

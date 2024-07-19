@@ -1,0 +1,36 @@
+@keyframes animateLogoDesktop {
+    from {
+      transform: translateX(2000px) rotate(0deg);
+    }
+    to {
+      transform: translateX(0px) rotate(360deg);
+    }
+  }
+  
+  @keyframes animateLogoMobile {
+    from {
+      transform: translateX(1000px) rotate(0deg);
+    }
+    to {
+      transform: translateX(0px) rotate(360deg);
+    }
+  }
+  
+  .animateLogo {
+    animation: animateLogoDesktop 2s ease-out;
+  }
+  
+  @media (max-width: 768px) {
+    .animateLogo {
+      animation: animateLogoMobile 2s ease-out;
+    }
+  }
+  
+
+
+  
+  
+  
+  
+  
+  
