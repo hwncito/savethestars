@@ -2,20 +2,22 @@
 import Image from 'next/image';
 import pollutionImage from '../../../public/light-pollution.webp';
 import './ProblemSection.css';
-import useIntersectionObserver from '@/hooks/useIntersectionObserver';
+// import useIntersectionObserver from '@/hooks/useIntersectionObserver';
 
 export default function ProblemSection() {
-  const elementsRef = useIntersectionObserver({ threshold: 0.2 });
+  // const elementsRef = useIntersectionObserver({ threshold: 0.2 });
   return (
     <div className="container mx-auto text-center my-20 px-4" id='problem-section'>
       <h2
         className="text-3xl font-bold my-8 fade-in"
-        ref={(el) => elementsRef.current.push(el)}
+        // ref={(el) => elementsRef.current.push(el)}
       >
         The Problem with <span className="gradient-text">Light Pollution</span>
       </h2>
       <div className="text-left max-w-4xl mx-auto">
-        <p className="mb-6 fade-in" ref={(el) => elementsRef.current.push(el)}>
+        <p className="mb-6 fade-in" 
+        // ref={(el) => elementsRef.current.push(el)}
+        >
           Light pollution is the excessive or misdirected artificial light that
           brightens the night sky, disrupting the natural darkness.
         </p>
@@ -26,12 +28,12 @@ export default function ProblemSection() {
           quality={100}
           priority
           className="rounded-md fade-in"
-          ref={(el) => elementsRef.current.push(el)}
+          // ref={(el) => elementsRef.current.push(el)}
         />
 
         <div
           className="flex mt-1 fade-in"
-          ref={(el) => elementsRef.current.push(el)}
+          // ref={(el) => elementsRef.current.push(el)}
         >
           <p className="text-center text-lg font-medium w-full text-red-900">
             With
@@ -43,7 +45,7 @@ export default function ProblemSection() {
 
         <div
           className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8 fade-in"
-          ref={(el) => elementsRef.current.push(el)}
+          // ref={(el) => elementsRef.current.push(el)}
         >
           <div>
             <h3 className="text-xl font-semibold">Causes of Light Pollution</h3>
@@ -72,7 +74,7 @@ export default function ProblemSection() {
             backgroundPosition: 'center',
           }}
           className="p-6 rounded-lg shadow-md text-white fade-in"
-          ref={(el) => elementsRef.current.push(el)}
+          // ref={(el) => elementsRef.current.push(el)}
         >
           <h3 className="text-2xl font-bold mb-4">Did You Know?</h3>
           <ul className="space-y-2 list-inside text-white ">
